@@ -97,11 +97,11 @@ public class QTEsystem : MonoBehaviour {
         {
             CountingDown = 2;
             PassBox.GetComponent<Text>().text = "GREAT";
-           yield return new WaitForSeconds(1.0f);
+           yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<Text>().text = "";
            DisplayBox.GetComponent<Text>().text = "";
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
         }
@@ -109,11 +109,11 @@ public class QTEsystem : MonoBehaviour {
         {
             CountingDown = 2;
             PassBox.GetComponent<Text>().text = "WRONG";
-           yield return new WaitForSeconds(1.0f);
+           yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<Text>().text = "";
            DisplayBox.GetComponent<Text>().text = "";
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
         }
@@ -121,17 +121,17 @@ public class QTEsystem : MonoBehaviour {
 
     IEnumerator CountDown()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
         if (CountingDown == 1)
         {
             QTEGen = 4;
             CountingDown = 2;
-            PassBox.GetComponent<Text>().text = "WRONG";
-           yield return new WaitForSeconds(1.0f);
+            PassBox.GetComponent<Text>().text = "Too Slow";
+           yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<Text>().text = "";
             DisplayBox.GetComponent<Text>().text = "";
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
         }
