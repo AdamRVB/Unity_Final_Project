@@ -64,7 +64,19 @@ public class PlayerController : MonoBehaviour{
 
     private void Update()
     {
-        
+        if (timer >= 0.0f && canCount)
+        {
+            timer -= Time.deltaTime;
+            uiText.text = timer.ToString("F");
+        }
+
+        else if (timer <= 0.0 && !doOnce)
+        {
+            canCount = false;
+            doOnce = true;
+            uiText.text = "0.0";
+            timer = 0.0f;
+        }
         ScoreText.text = "Score: " + score;
         if (WaitingForKey == 0)
         {
