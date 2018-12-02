@@ -1,0 +1,6 @@
+Click the buttons as they appear 
+Buttons will be assigned to keys 
+"U"
+"I"
+"O"
+At Score of 3 win animation will occur or Time up will Lead to next game.

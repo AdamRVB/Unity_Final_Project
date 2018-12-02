@@ -148,6 +148,8 @@ public class PlayerController : MonoBehaviour{
             StopCoroutine(CountDown());
             StopCoroutine(KeyPressing());
             anim.SetInteger("State", 2);
+            
+
         }
 
             
