@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
     public Text ScoreText;
     private int score;
-    Animator anim;
+    
 
     private void Start()
     {
         score = 0;
-        anim = GetComponent<Animator>();
+       
     }
 
 
